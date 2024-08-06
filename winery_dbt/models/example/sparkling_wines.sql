@@ -8,6 +8,7 @@ WITH raw_data AS (
 SELECT
     id,
     name AS wine_name,
+    country AS country_name,
     region AS wine_region,
     winery AS wine_winery,
     rating,
