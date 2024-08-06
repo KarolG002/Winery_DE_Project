@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: red
+    description: "A sample schema"
+    database: winedb
+    schema: public
+    tables:
+      - name: red
+        description: "A table with red wines"
+        columns:
+          - name: id
+            description: "The primary key for this table"
+      - name: rose
+        description: "A table with rose wines"
+        columns:
+          - name: id
+            description: "The primary key for this table"
+      - name: white
+        description: "A table with white wines"
+        columns:
+          - name: id
+            description: "The primary key for this table"
+      - name: sparkling
+        description: "A table with sparkling wines"
+        columns:
+          - name: id
+            description: "The primary key for this table"
+
+
+sources:
+  - name: winery_source
+    schema: public
+    database: winedb
+
+    tables:
+      - name: red
+      - name: rose
+      - name: sparkling
+      - name: white
