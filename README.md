@@ -21,8 +21,8 @@ The goal of this project is to do an etl pipeline with python, dbt and bigquery 
 ![Project architecture](images/Architecture.png "Architecture diagram")
 
 ## Power BI Dashboard
-![Power BI Dashboard](images/Dashboard_1.png "Power BI Dashboard_1")
-![Power BI Dashboard](images/Dashboard_2.png "Power BI Dashboard_2")
+![Power BI Dashboard](images/Dashboard_1.PNG "Power BI Dashboard_1")
+![Power BI Dashboard](images/Dashboard_2.PNG "Power BI Dashboard_2")
 [Published report](https://app.powerbi.com/view?r=eyJrIjoiNTE1MmM2MTctZjFkYS00MGU1LWE2ZDgtNDViOGJjYzZiNTU1IiwidCI6IjFlMTdlYjI0LWE0N2YtNGFmMC1iNTA0LTA2MzljZDI4ZjYwNyIsImMiOjF9&pageName=8a4e701b408789514fdb)
 
 ## Prerequisites
