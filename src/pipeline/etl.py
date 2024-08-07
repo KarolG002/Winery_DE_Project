@@ -1,19 +1,12 @@
 import pandas as pd
-#from google.cloud import bigquery
 import os
 from sqlalchemy import create_engine
-#import pandas_gbq
-#from google.oauth2 import service_account
+
 
 #CONSTANTS
 filepath = "data/"
 file_names=os.listdir(filepath)
-#os.environ["GOOGLE_CREDENTIALS"]='/d/projekty_z_programowania/dataengineering_batch/terraform_gcp/terraform/keys/key.json'
-#credentials = service_account.Credentials.from_service_account_file(
- #   'D:\\projekty_z_programowania\\dataengineering_batch\\terraform_gcp\\terraform\\keys\\key.json',
-#)
-dataset_id = "dwh_warehouse_dataset"
-project_id = "dwh-terraform-gcp"
+
 def read_data(filepath: str):
         try:
             red = pd.read_csv(f"{filepath}red.csv")
@@ -49,8 +42,8 @@ def insert_to_db(
         print(f"Error inserting DataFrame into {table_name} table: {e}")
 
 def main():
+   file_names = os.listdir(filepath)
    red, rose, sparkling, white = read_data(filepath)
-   #print(red, rose, sparkling, white)
    insert_to_db(df=red, table_name="red")
    insert_to_db(df=rose, table_name="rose")
    insert_to_db(df=sparkling, table_name="sparkling")

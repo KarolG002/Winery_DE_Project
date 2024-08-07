@@ -6,7 +6,7 @@ import logging
 from prefect import flow, task
 from prefect.client.schemas.schedules import IntervalSchedule
 from datetime import timedelta, datetime
-from credentials import credentials
+from src.pipeline.credentials import credentials
 import os
 
 # Database connection parameters
