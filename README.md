@@ -100,15 +100,11 @@ Connect to your BigQuery dataset using the BigQuery Connector.
 Create your visualizations based on the data available in the BigQuery tables.
 
 ## Testing
-Navigate to the tests directory:
+In the main directory run in the terminal:
 
 ```bash
-cd tests
-```
-
-Run the tests using pytest:
-```bash
-python -m pytest tests.py
+python -m pytest tests/tests_etl.py
+python -m pytest tests/tests_bigquery.py
 ```
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
