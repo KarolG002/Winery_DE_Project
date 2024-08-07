@@ -5,7 +5,7 @@
 .venv
 /src/pipeline/credentials.py
 /src/pipeline/offset.txt
-/tests
+
 backupredme.md
 .installed.cfg
 bin
